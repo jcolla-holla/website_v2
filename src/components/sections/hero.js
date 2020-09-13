@@ -30,7 +30,7 @@ const StyledHeroSection = styled.section`
 
   p {
     margin: 20px 0 0;
-    max-width: 500px;
+    max-width: 800px;
   }
 
   .email-link {
@@ -47,14 +47,15 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
+  const one = <h1>Hi there, my name is:</h1>;
+  const two = <h2 className="big-heading">Jesse Colligan.</h2>;
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
-    <p>
-      I'm a software engineer based in Boston, MA specializing in building (and occasionally
-      designing) exceptional websites, applications, and everything in between.
-    </p>
+    <>
+      <p>I'm a software engineer based in California.</p>
+      <p>My mission is to leverage technology to solve big problems (pretty cheesy, huh?)</p>
+      <p>There is no shortage of problems to solve!</p>
+    </>
   );
   const five = (
     <a href={`mailto:${email}`} className="email-link">
